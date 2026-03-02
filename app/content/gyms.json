@@ -1,0 +1,23 @@
+[
+  {
+    "id": "GRACIE",
+    "name": "Gracie Style Academy",
+    "description": "Structured self-defense classes with clear steps, lots of posture reminders, and bow-in etiquette.",
+    "quirk": "You hear the phrase base and posture at least 12 times per class.",
+    "vibe": "Calm but formal. White belts are guided closely."
+  },
+  {
+    "id": "MMA",
+    "name": "Cage Blend MMA",
+    "description": "Nogi-heavy room with wrestlers, fighters, and a little chaos in every round.",
+    "quirk": "Warmups can accidentally become conditioning tests.",
+    "vibe": "Fast pace, loud timer, sink or learn energy."
+  },
+  {
+    "id": "SPORT",
+    "name": "Sport Jiu Jitsu Lab",
+    "description": "Competition-oriented technical room with positional chains and ceremony-like class cadence.",
+    "quirk": "People discuss lapel grips the way others discuss weather.",
+    "vibe": "Technical and focused, with detail-heavy coaching."
+  }
+]

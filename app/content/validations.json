@@ -1,0 +1,22 @@
+[
+  {
+    "id": "coach_name",
+    "text": "Coach nods and says, Good work, {name}.",
+    "conditions": { "minCoachTrust": 2 }
+  },
+  {
+    "id": "peer_invite",
+    "text": "A teammate asks if you want to drill together next week.",
+    "conditions": { "minSocial": 1 }
+  },
+  {
+    "id": "shrimp_dream",
+    "text": "You dream about shrimping and framing. Somehow this feels like progress.",
+    "conditions": { "minCuriosity": 0 }
+  },
+  {
+    "id": "veteran_nod",
+    "text": "A veteran gives you a quick nod after rounds. Tiny moment, big effect.",
+    "conditions": { "minWeek": 2, "minReputation": 1 }
+  }
+]

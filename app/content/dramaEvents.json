@@ -1,0 +1,26 @@
+[
+  {
+    "id": "partner_elsewhere",
+    "text": "Your usual drilling partner pairs with someone else all week. It is normal, but you still feel a little weird about it.",
+    "conditions": { "minWeek": 1 },
+    "effects": { "social": -1, "momentum": -1 }
+  },
+  {
+    "id": "cliques_visible",
+    "text": "You notice mini groups: competitors in one corner, morning crew jokes in another. You are still finding your lane.",
+    "conditions": { "minWeek": 2 },
+    "effects": { "social": -1, "curiosity": 1 }
+  },
+  {
+    "id": "coach_irritated",
+    "text": "Coach seems irritated with the room pace tonight. Everyone tightens up a little.",
+    "conditions": { "minWeek": 2 },
+    "effects": { "coachTrust": -1, "external": -1 }
+  },
+  {
+    "id": "someone_switches",
+    "text": "Someone mentions they switched gyms for schedule reasons. You quietly wonder about fit and style.",
+    "conditions": { "minWeek": 3 },
+    "effects": { "curiosity": 2 }
+  }
+]

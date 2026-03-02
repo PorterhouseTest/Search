@@ -1,0 +1,32 @@
+[
+  {
+    "id": "work_deadline",
+    "text": "A work deadline squeezes your evening and your head stays half in your inbox.",
+    "conditions": { "minWeek": 1 },
+    "effects": { "external": -2, "momentum": -1 }
+  },
+  {
+    "id": "better_sleep",
+    "text": "You finally sleep well for two nights in a row and your body thanks you.",
+    "conditions": { "minWeek": 1 },
+    "effects": { "durability": 2, "external": 1 }
+  },
+  {
+    "id": "family_obligation",
+    "text": "Family plans pop up. You still train, but the schedule is tight.",
+    "conditions": { "minWeek": 2 },
+    "effects": { "external": -1, "momentum": -1 }
+  },
+  {
+    "id": "minor_tweak",
+    "text": "A minor neck tweak makes you extra careful on bridges and scrambles.",
+    "conditions": { "minWeek": 1 },
+    "effects": { "durability": -2, "momentum": -1 }
+  },
+  {
+    "id": "meal_prep_win",
+    "text": "You meal prep like a champion and energy stays stable through the week.",
+    "conditions": { "minWeek": 2 },
+    "effects": { "external": 1, "durability": 1 }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "almost_sub",
+    "text": "You almost finish a submission and lose it at the last second. You now understand that almost matters.",
+    "conditions": { "minSkill": 2, "minCuriosity": 1 },
+    "effects": { "skill": 1, "momentum": 1 }
+  },
+  {
+    "id": "first_sub",
+    "text": "You catch your first clean submission on a newer student. You celebrate internally and try not to spaz next round.",
+    "conditions": { "minSkill": 3, "minWeek": 2 },
+    "effects": { "reputation": 1, "intensity": 1, "momentum": 2 }
+  },
+  {
+    "id": "compliment",
+    "text": "A teammate compliments how safe and technical your roll felt.",
+    "conditions": { "minReputation": 2, "minCoachTrust": 1 },
+    "effects": { "reputation": 1, "social": 1 }
+  },
+  {
+    "id": "veteran_talk",
+    "text": "A veteran gives you one specific tip that unlocks a position immediately.",
+    "conditions": { "minCoachTrust": 3, "minWeek": 3 },
+    "effects": { "skill": 1, "coachTrust": 1, "momentum": 1 }
+  }
+]
