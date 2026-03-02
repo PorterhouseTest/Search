@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Search Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Job Search Command Center</h1>
+      <p>
+        Pull jobs from your boolean search, track every stage, and monitor conversion metrics in real-time.
+      </p>
+    </header>
+
+    <main>
+      <section class="card search-panel">
+        <h2>1) Pull Jobs</h2>
+        <label for="searchUrl">Google Boolean Search URL</label>
+        <textarea id="searchUrl" rows="3"></textarea>
+        <div class="actions">
+          <button id="pullJobsBtn">Pull Jobs</button>
+          <button id="openSearchBtn" class="secondary">Open Search in New Tab</button>
+          <button id="seedDemoBtn" class="ghost">Load Demo Jobs</button>
+        </div>
+        <p id="fetchStatus" class="status"></p>
+      </section>
+
+      <section class="card metrics-panel">
+        <h2>2) Funnel Metrics</h2>
+        <div id="metricsGrid" class="metrics-grid"></div>
+      </section>
+
+      <section class="card filters-panel">
+        <h2>3) Pipeline</h2>
+        <div class="toolbar">
+          <input id="searchInput" type="text" placeholder="Search by title/company/source" />
+          <select id="stageFilter">
+            <option value="all">All Stages</option>
+          </select>
+          <select id="sortBy">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="company">Company A-Z</option>
+            <option value="stage">Pipeline Stage</option>
+          </select>
+        </div>
+        <div id="jobsContainer" class="jobs-container"></div>
+      </section>
+    </main>
+
+    <template id="jobCardTemplate">
+      <article class="job-card">
+        <div class="job-header">
+          <h3 class="job-title"></h3>
+          <span class="stage-pill"></span>
+        </div>
+        <p class="company"></p>
+        <div class="meta"></div>
+        <div class="quick-actions">
+          <button data-action="applied">Applied</button>
+          <button data-action="not_interested" class="secondary">Not Interested</button>
+          <button data-action="rejected" class="danger">Rejected</button>
+          <button data-action="interview1" class="info">1st Round</button>
+          <button data-action="interview2" class="info">2nd Round</button>
+          <button data-action="final" class="info">Final Round</button>
+          <button data-action="offer" class="success">Offer</button>
+          <button data-action="accepted" class="success">Accepted</button>
+        </div>
+        <label>Notes</label>
+        <textarea class="notes" rows="2" placeholder="Add details, hiring manager names, prep notes, next steps..."></textarea>
+        <div class="card-footer">
+          <a class="job-link" target="_blank" rel="noopener noreferrer">Open Listing</a>
+          <button data-action="remove" class="ghost">Remove</button>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
